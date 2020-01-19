@@ -1,0 +1,353 @@
+/* *{
+    box-sizing: border-box;
+    border: 1px solid pink;
+} */
+
+html{
+    background: url("./images/bg-stone-grey.jpg") center;
+    background-size: cover;
+}
+
+.none{
+    display: none;
+}
+
+.truncate{
+    width: 200px;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+    text-justify: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.nav-row{
+    height:10px;
+}
+/* ----------------------------- */
+
+.payment-wrapper{
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+/* ---------- 商品購買清單列表 ----------  */
+
+.checkout-final-form{
+    border: 1px solid #CCCCCC;
+    background-color: white;
+
+}
+
+/* 購物車內容-標題 */
+.heading{
+    margin-top: 50px;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+h5{
+    text-align: left;
+}
+
+/* 回上一步 */
+.back-button{
+    width: 100px;
+    color: #743CF5;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 2px solid #743CF5;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+    
+    .back-button:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #743CF5;
+}
+
+
+/* 項目-小標 */
+.sub-heading{
+    border-bottom: 1px solid #CCCCCC;
+    height: 40px;
+}
+
+.table-head{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    background-color: white;
+    border-bottom: 1px solid #CCCCCC;
+    /* grid-template-columns: 55% 22% 5% 18%; */
+}
+
+.table-head li{
+    text-align: center;
+}
+
+.table-head li.p-header{
+    text-align: left;
+}
+
+.cart-wrap{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 商品明細內容 */
+.cart-section{
+    display: flex;
+    /* vertical-align: middle; */
+}
+
+.p-desc{
+    display: block;
+    text-align: left;
+}
+
+.items{
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+
+/* 產品圖 */
+.item-img{
+    width: 100px;
+    height: 100px;
+}
+
+/* 數量 */
+.qty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* 小計, 刪除鍵 */
+.sub-total{
+    text-align: center;
+}
+.sub-total, .remove-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn{
+    border: none;
+    color:#999999;
+    background-color: transparent;
+    height:20px;
+}
+
+.remove-btn:hover{
+    color:#743CF5;
+}
+
+
+
+/* ---------- 結帳金額 ----------  */
+
+.list-title{
+    background-color: #CCCCCC;
+}
+
+
+.detail-item-list{
+    display: block;
+    text-align: right;
+}
+
+.list-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* ---------- 付款方式 ----------  */
+   
+.payment-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+
+/* ATM */
+
+#bankSelect{
+    max-width: 227px;
+    height: 37px;
+    border: solid 1px #999999; 
+    border-radius: 4px;
+    padding: 0px 15px;
+}
+
+#bankSelect:focus{
+    border-color: #ccc;
+    box-shadow:0 0 3px #999;
+    outline: none;
+}
+
+
+
+/* 信用卡 */
+
+.fab{
+   font-size: 40px;
+   color:#CCCCCC;
+}
+
+input[type="radio"]:checked + i{
+    color: #743CF5;
+}
+
+.cardinput{
+    max-width:180px;
+    border-radius: 4px;
+    color:#333;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cardinput:focus,  #name:focus{
+    border-color: #ccc;
+    box-shadow:0 0 3px #999;
+    outline:  none;
+}
+
+#name{
+    border-radius: 4px;
+    /* color:#333; */
+    background-color: white;
+    text-align: center;
+}
+
+#cardnumber{
+    max-width:250px;
+    border-radius: 4px;
+    color:#333;
+    text-align: center;
+    /* margin: 5px 0; */
+}
+
+#cardnumber::placeholder{
+    font-size: 12px;
+}
+
+#expirationdate, #securitycode{
+    max-width:100px;
+}
+
+
+
+/* ---------- 立即付款 ----------  */
+.payment-cta{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+/* 小計 */
+.sub-total{
+    font-size: 12px;
+}
+
+ /* 項目-小標 */
+.table-head li{
+    font-size: 12px;
+}
+
+.qty{
+    font-size: 12px;
+}
+
+
+  
+.payment-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab{
+   font-size: 30px;
+   color:#CCCCCC;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 1000px){
+
+html, body{
+    background: white;
+}
+
+/* 商品明細內容 */
+.cart-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-name{
+   text-align: center;
+   font-size: 13px;
+}
+
+.item-dimension, .item-dimension span{
+    font-size: 12px;
+}
+
+/* 產品圖片 */
+.item-img {
+    max-width: 65px;
+    max-height: 65px;
+}
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+
+
+
+
+}

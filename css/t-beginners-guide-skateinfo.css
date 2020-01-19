@@ -1,0 +1,235 @@
+*{
+    /* border: solid 1px orange; */
+    /* overflow: hidden; */
+}
+.beginners-guide-html-bg{
+    z-index: -3;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)) , url(../images/photo-1515895309288-a3815ab7cf81copy.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.beginners-guide-html-bg .white-trangle{
+    width: 50vw;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(20);
+    fill: #FFF;
+}
+.beginners-guide-html-bg .white-trangle-right{
+    right: 0;
+}
+.item-list-nav{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+}
+.title{
+    margin-top: 20px;
+    font-weight: medium;
+    position: relative;
+}
+.title .titleSkate{
+    position: absolute;
+    z-index: -1;
+    left: -11px;
+    top:19px;
+}
+.beginner-guide-box{
+    padding: 20px 0px;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+.beginner-guide-box .flex-column{
+    position: relative;
+}
+.beginner-guide-a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.beginner-guide-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 5px #75FB4E;
+    margin: auto;
+}
+.beginner-guide-img::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 1px #75FB4E;
+    margin: auto;
+}
+.beginner-guide-img-left img{
+    display: inline-block;
+    width: 70px;
+    transform:translate(90px,-50px) rotate(45deg);
+}
+.suge-decoration{
+    margin-top: 50px;
+    height: 100px;
+    overflow: hidden;
+}
+.suge-decoration img{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%) rotate(90deg) scale(.8);
+    margin: auto;
+    animation: suge-decorationAni 1s linear infinite;
+}
+@keyframes suge-decorationAni{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 120px;
+    }
+}
+.beginner-guide-skate-img{
+    margin-top: 100px;
+}
+.beginner-guide-skate-img .img-box{
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 300px;
+}
+.beginner-guide-skate-img span{
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    opacity: 0;
+    border-left:solid 2px #75FB4E;
+    padding: 10px;
+    height: 50px;
+}
+.beginner-guide-skate-img .img-smbox{
+    width: 230px;
+}
+.beginner-guide-skate-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.beginner-guide-skate-img .img1,.beginner-guide-skate-img .img2,.beginner-guide-skate-img .img6{
+    display: inline-block;
+    height: 300px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.beginner-guide-skate-img .img3,.beginner-guide-skate-img .img4{
+    height: 70px;
+}
+.beginner-guide-skate-img .img-smbox03{
+    margin-left: 20px;
+}
+.beginner-guide-skate-img .img5{
+    height: 40px;
+}
+.skateinfo-dashline{
+    position: absolute;
+    opacity: 1;
+}
+.skateinfo-content{
+    padding: 20px;
+    position: relative;
+}
+.skateinfo-content .title{
+    margin: auto;
+    margin-top: 50px;
+}
+.skateinfo-content .skateinfo-content-p{
+    width: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.skateinfo-content .skateinfo-right-content{
+    margin: 70px 0px 70px auto;
+}
+.skateinfo-content .skateinfo-left-content{
+    margin: 70px auto 70px 0px;
+}
+.skateinfo-content .skateinfo-content-p span{
+    font-size: 20px;
+    color: #743CF5;
+}
+.skateinfo-content-for{
+    margin: 50px auto;
+    text-align: center;
+    line-height: 24px;
+    padding: 30px;
+    border-top: solid 2px #75FB4E;
+    border-bottom: solid 2px #75FB4E;
+}
+.beginner-guide-content, .container-fluid, .container{
+    animation: skateInfo-opAni .5s ease-in-out;
+}
+@keyframes skateInfo-opAni{
+    from{
+        transform: translateX(-150px) scale(1.2);
+        opacity:0;
+        filter:blur(50px)
+    }
+    to{
+        transform: translateX(0px) scale(1);
+        opacity:1;
+        filter:blur(0px)  
+    }
+}
+.content-deco{
+    position: absolute;
+    right: 0px;
+    opacity: .3;
+}
+.beginners-guide-deco img{
+    position: absolute;
+    opacity: .6;
+}
+.beginners-guide-cruiser img{
+    top: 120vh;
+    left: 5vw;
+    transform: rotate(60deg);
+}
+.beginners-guide-deck img{
+    top: 170vh;
+    right: 17vw;
+    width: 10vw;
+    transform: rotate(60deg);
+}
+.beginners-guide-trucks img{
+    top: 225vh;
+    left: 15vw;
+    width: 20vw;
+}
+.beginners-guide-wheels img{
+    top: calc(275vh - 100px);
+    right: 22vw;
+    width: 10vw;
+}
+.beginners-guide-bearings img{
+    top: calc(320vh - 100px);
+    left: 25vw;
+    width: 7vw;
+}
+.beginners-guide-griptape img{
+    top: calc(330vh - 100px);
+    right: 10vw;
+    width: 10vw;
+    transform: rotate(-90deg);
+}
+

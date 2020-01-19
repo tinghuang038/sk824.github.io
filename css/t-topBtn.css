@@ -1,0 +1,25 @@
+.purple-top-btn{
+    position: fixed;
+    width: 65px;
+    height: 45px;
+    bottom: 70px;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+    padding: 0;
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translateX(100%);
+    cursor: pointer;
+}
+.purple-top-btn img{
+    display: inline-block;
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    margin: 15px;
+}
+@media screen and (max-width: 750px){
+    .purple-top-btn{
+        width: 45px;
+        bottom: 40px;
+        /* opacity: 0; */
+    }
+}
