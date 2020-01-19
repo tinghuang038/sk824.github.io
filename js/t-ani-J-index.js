@@ -1,9 +1,0 @@
-$(window).scroll(
-    function(){
-        if($(window).scrollTop()>200){
-            $(".chart1_line").css('width','100%')
-        }else{
-            $(".chart1_line").css('width','0%')
-        }
-    }
-)
