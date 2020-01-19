@@ -1,0 +1,82 @@
+        .margin {
+            margin: 100px auto;
+            border-radius: 4px;
+            box-shadow: 0px 3px 6px #ccc;
+            overflow: hidden;
+        }
+
+        .img {
+            background: url(img/bg-img.jpg);
+        }
+
+        figure {
+            overflow: hidden;
+        }
+
+        .tsai-wrap h4 {
+            margin: 5px 40px;
+        }
+
+        .tsai-mar {
+            margin: 140px auto 60px;
+            width: 100%;
+        }
+        .tsai-mar h4{
+            display: inline-block;
+            /* margin: 5px 10px; */
+        }
+
+        .inin {
+            line-height: 0px;
+            margin: 20px auto 0px;
+        }
+        .tsai_loginBtn {
+            margin:10px auto;
+            width: 227px;
+        }
+
+        .bt-g3 {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            background: #4f69c5;
+            color: white;
+            transition: .5s;
+        }
+
+        .bt-g3:hover {
+            background: #495fb1;
+            text-decoration: none;
+        }
+
+        .tsai-btn {
+            margin: 10px auto;
+        }
+
+        .tsai-btn p {
+            margin: 10px;
+        }
+
+        .cancel {
+            font-size: 25px;
+            position: absolute;
+            right: 2%;
+            padding: 6px 0;
+        }
+        
+        .or{
+            margin:0px auto;
+        }
+        
+
+        @media screen and (max-width:767px) {
+            .img{
+                display: none;
+            }
+            .margin {
+                margin: 20vh auto;
+                width: 90vw;
+            }
+        }
+        /*  */
